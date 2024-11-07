@@ -31,6 +31,10 @@ Vagrant.configure("2") do |config|
         sudo apt update
         sudo apt upgrade -y
         sudo apt install -y bind9 dnsutils
+        # Copiar archivos de configuración
+        sudo cp /vagrant/DNSB/named.conf.local /etc/bind/named.conf.local
+        # Reiniciar el servicio BIND
+        sudo systemctl restart bind9
       SHELL
     end
   end
