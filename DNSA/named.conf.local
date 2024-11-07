@@ -9,10 +9,12 @@ zone "57.168.192.in-addr.arpa" {
 zone "aulas.ies.test" {
     type master;
     file "/etc/bind/db.aulas";
+    allow-transfer { 192.168.57.11; };  # Dirección IP del servidor DNSB
 };
 zone "informatica.ies.test" {
     type master;
     file "/etc/bind/db.informatica";
+    allow-transfer { 192.168.57.11; };  # Dirección IP del servidor DNSB
 };
 zone "departamentos.ies.test" {
     type master;
