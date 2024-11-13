@@ -31,3 +31,14 @@ Las pruebas de funcionamiento incluyen consultas DNS realizadas desde el sistema
 ## Conclusión
 
 La solución permite la configuración de un entorno DNS redundante, con un servidor maestro gestionando las zonas de dominio y un servidor esclavo replicando las configuraciones, lo que garantiza la alta disponibilidad y fiabilidad del servicio DNS. Esta configuración es ideal para entornos empresariales o educativos que requieren una infraestructura de DNS robusta y escalable.
+
+## Responder a las preguntas:
+¿Para qué me puede servir esta utilidad? Los logs de BIND son útiles para:
+
+Auditoría y solución de problemas: 
+Puedes rastrear qué consultas de DNS se están haciendo, si algún cliente está teniendo problemas para resolver nombres o si hay patrones sospechosos.
+Seguridad: Permiten detectar consultas maliciosas, como intentos de acceso a dominios no autorizados.
+Rendimiento: Ayuda a evaluar el rendimiento y ver si hay picos en el tráfico DNS.
+
+¿Es consistente con la protección de datos? 
+En términos de protección de datos, es importante tener en cuenta que los logs de DNS pueden contener información sobre las consultas realizadas por los usuarios. Si estas consultas contienen información sensible o personal (por ejemplo, si los usuarios están accediendo a servicios internos o sitios con información sensible), se debe considerar si es adecuado almacenar esa información. Para cumplir con normativas de privacidad (como el GDPR), se puede implementar un sistema de retención adecuado y anonimizar los datos cuando sea necesario.
