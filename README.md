@@ -33,7 +33,7 @@ Las pruebas de funcionamiento incluyen consultas DNS realizadas desde el sistema
 La solución permite la configuración de un entorno DNS redundante, con un servidor maestro gestionando las zonas de dominio y un servidor esclavo replicando las configuraciones, lo que garantiza la alta disponibilidad y fiabilidad del servicio DNS. Esta configuración es ideal para entornos empresariales o educativos que requieren una infraestructura de DNS robusta y escalable.
 
 ## Responder a las preguntas:
-¿Para qué me puede servir esta utilidad? Los logs de BIND son útiles para:
+¿Para qué me puede servir esta utilidad?
 
 Auditoría y solución de problemas: 
 Puedes rastrear qué consultas de DNS se están haciendo, si algún cliente está teniendo problemas para resolver nombres o si hay patrones sospechosos.
